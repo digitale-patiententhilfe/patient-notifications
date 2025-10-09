@@ -33,17 +33,20 @@ A full-stack application for managing medical appointment notifications with mul
 ### Installation
 
 1. Clone the repository
+
    ```bash
    git clone <repository-url>
    cd notification-project
    ```
 
 2. Install dependencies
+
    ```bash
    pnpm install
    ```
 
 3. Set up environment variables
+
    ```bash
    cp .env.example .env
    ```
@@ -57,16 +60,19 @@ A full-stack application for managing medical appointment notifications with mul
    - Password: `password123`
 
 4. Initialize the database
+
    ```bash
    pnpm db:push
    ```
 
 5. (Optional) Seed with sample data
+
    ```bash
    pnpm db:seed
    ```
 
 6. Start the development server
+
    ```bash
    pnpm dev
    ```
@@ -76,6 +82,7 @@ A full-stack application for managing medical appointment notifications with mul
 ## Available Commands
 
 ### Development
+
 ```bash
 pnpm dev              # Start dev server with Turbopack
 pnpm build            # Production build
@@ -84,6 +91,7 @@ pnpm preview          # Build and start production server
 ```
 
 ### Code Quality
+
 ```bash
 pnpm check            # Run linter and type checker together
 pnpm lint             # Run ESLint
@@ -94,6 +102,7 @@ pnpm format:write     # Auto-format code with Prettier
 ```
 
 ### Database
+
 ```bash
 pnpm db:push          # Push schema changes to DB (dev)
 pnpm db:generate      # Generate Prisma client and run migrations
@@ -103,6 +112,7 @@ pnpm db:seed          # Seed database with sample data
 ```
 
 ### Testing
+
 ```bash
 pnpm test             # Run tests in watch mode
 pnpm test:ui          # Run tests with Vitest UI
@@ -138,6 +148,7 @@ notification-project/
 ## Architecture
 
 See [ARCHITECTURE.md](./ARCHITECTURE.md) for detailed documentation on:
+
 - System architecture and design patterns
 - Database schema and relationships
 - Service layer organization
@@ -167,10 +178,12 @@ See [ARCHITECTURE.md](./ARCHITECTURE.md) for detailed documentation on:
 The app uses NextAuth v5 with Credentials provider for easy development:
 
 **Demo Credentials:**
+
 - Email: `test@example.com`
 - Password: `password123`
 
 The seed script creates this demo user automatically. In a production environment, you would:
+
 - Hash passwords using bcrypt or similar
 - Implement proper user registration
 - Add email verification
@@ -179,10 +192,12 @@ The seed script creates this demo user automatically. In a production environmen
 ## Learn More
 
 ### T3 Stack Resources
+
 - [T3 Stack Documentation](https://create.t3.gg/)
 - [T3 Stack Tutorial](https://create.t3.gg/en/faq)
 
 ### Technology Documentation
+
 - [Next.js Documentation](https://nextjs.org/docs)
 - [tRPC Documentation](https://trpc.io/docs)
 - [Prisma Documentation](https://www.prisma.io/docs)
@@ -201,4 +216,24 @@ This project follows strict TypeScript and ESLint configurations. Before submitt
 
 ## License
 
-[Your License Here]
+MIT License
+
+Copyright (c) 2024 Patient Notification Management System
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
