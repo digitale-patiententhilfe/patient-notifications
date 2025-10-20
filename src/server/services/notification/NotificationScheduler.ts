@@ -1,7 +1,6 @@
 /**
  * NotificationScheduler - Handles scheduling logic for notifications
  *
- * TODO (Candidate Task 1): Implement notification scheduling logic
  *
  * Business Requirements:
  * 1. Appointment reminders should be sent:

@@ -9,7 +9,6 @@ export interface NotificationValidationError {
 /**
  * NotificationValidator - Validates business rules for notifications
  *
- * TODO (Candidate Task 7): Implement validation layer
  *
  * Requirements:
  * - Can't schedule notification in the past

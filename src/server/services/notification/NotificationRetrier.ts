@@ -3,7 +3,6 @@ import type { PrismaClient } from "@prisma/client";
 /**
  * NotificationRetrier - Handles retry logic for failed notifications
  *
- * TODO (Candidate Task 5): Implement retry logic with exponential backoff
  *
  * Requirements:
  * 1. Retry failed notifications up to maxRetries times

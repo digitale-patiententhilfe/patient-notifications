@@ -5,7 +5,6 @@ import { AppointmentStatus } from "@prisma/client";
 /**
  * Appointment router - tRPC endpoints for appointment management
  *
- * TODO (Candidate Task 6): Write integration tests for this router
  * Test file should be: appointment.test.ts
  */
 export const appointmentRouter = createTRPCRouter({

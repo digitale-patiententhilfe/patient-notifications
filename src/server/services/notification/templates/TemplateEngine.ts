@@ -1,7 +1,6 @@
 /**
  * TemplateEngine - Handles variable interpolation in notification templates
  *
- * TODO (Candidate Task 3): Implement template engine with variable interpolation
  *
  * Requirements:
  * 1. Parse template strings and replace {{variable}} with actual values

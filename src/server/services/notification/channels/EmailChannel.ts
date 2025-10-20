@@ -9,7 +9,6 @@ import type {
 /**
  * Email notification channel implementation.
  *
- * TODO (Candidate Task 2): Implement the EmailChannel
  * Requirements:
  * - Implement send() with mock email delivery (simulate API call)
  * - Add retry logic with exponential backoff
